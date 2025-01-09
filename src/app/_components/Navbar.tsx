@@ -59,6 +59,7 @@ export default function Navbar() {
                 {links.map((link, i) => (
                     <div key={i} className='h-16  '>
                         <Link
+                        scroll={false}
                             className={twMerge(`hover:bg-gray-800 hover: border-y border-gray-700 px-8 ${pathname === link.href && "bg-gray-950 border-y border-gray-700 hover:bg-gray-950"} font-medium flex justify-between items-center text-base  transition-colors ease-in duration-200  h-16`)}
                             href={link.href}
                         >
