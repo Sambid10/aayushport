@@ -7,7 +7,7 @@ export default function Footer() {
     <div className='relative h-[350px]'
     style={{clipPath:"polygon(0% 0,100% 0%,100% 100%,0 100%)"}}
     >
-        <div className='fixed bottom-0 h-[350px] w-full bg-[#040200]'>
+        <div className='fixed bottom-0 h-[350px] w-full bg-gray-950'>
             <Content/>
         </div>
     </div>
@@ -16,7 +16,7 @@ export default function Footer() {
 
 export function Content(){
     return(
-        <div className='text-[#FCFCFCFC] h-full flex flex-col px-4 lg:px-20 py-2 mb-2'>
+        <div className='text-[#FCFCFCFC] h-full relative flex flex-col px-4 lg:px-20 py-2 mb-2'>
            <div className='h-[50%] flex justify-between'>
             <div className='lg:text-6xl text-3xl md:text-5xl font-semibold h-full flex items-center'>
                 <h1>SHAKYA</h1>
@@ -31,14 +31,8 @@ export function Content(){
             </div>
            </div>
            <div className='h-[1px] bg-stone-500 w-full'/>
-           <div className='h-[50%] flex justify-center items-center'>
-            <div className=''>
-                <h1 className='text-center mb-4 text-xl capitalize'>Find me on:</h1>
-                
-            </div>
-            
-            </div>
             <FooterLinks/>
+            <div className="absolute z-0 pointer-events-none inset-0 flex items-center justify-center transition-colors ease-in dark:bg-black/5 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_2%,black)]"></div>
         </div>
     )
 }

@@ -1,8 +1,8 @@
-import React from 'react'
-import ButtonComponent from './MenuBag'
+// import React from 'react'
+// import ButtonComponent from './MenuBag'
 
-export default function Nav() {
-  return (
-        <ButtonComponent/>
-  )
-}
+// export default function Nav() {
+//   return (
+//         <ButtonComponent/>
+//   )
+// }

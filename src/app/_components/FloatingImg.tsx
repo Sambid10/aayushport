@@ -45,7 +45,7 @@ export default function FloatingImg() {
     }
   }
   return (
-    <div onMouseMove={(e) => {manageMouseMove(e)}} className='relative min-h-[100dvh] mx-auto max-w-[100vw] overflow-hidden'>
+    <div onMouseMove={(e) => {manageMouseMove(e)}} className='relative min-h-[120dvh] mx-auto max-w-[100vw] overflow-hidden'>
       <div ref={plane1} className='plane'>
         <Image 
           alt='img'
@@ -105,10 +105,11 @@ export default function FloatingImg() {
       </div>
       <div className={"title flex flex-col items-center justify-center gap-3"}>
         <h1>Like my Work?</h1>
-        <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+        <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-gray-600 text-gray-200 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
         Contact Me.
       </button>
       </div>
+
     </div>
   );
 }
