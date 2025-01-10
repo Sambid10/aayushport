@@ -2,7 +2,16 @@ import React from "react";
 import { MotionProps, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
+import Image from "next/image";
 import { SiGithub, SiTiktok, SiX, SiYoutube } from "react-icons/si";
+import { img } from "framer-motion/client";
+const items = [
+  { name: 'Figma',src:"/fig.png" },
+  { name: 'Blender',src:'/blender.svg' },
+  { name: 'Adobe_Photoshop',src:'/ad.png' },
+  { name: 'Adobe_Premiere_Pro',src:'/vod.png' },
+];
+const repeatedItems = [...items, ...items];
 export const RevealBento = () => {
   return (
     <div className="min-h-[100vh]  flex justify-center items-center px-4 py-12 text-zinc-50">
@@ -167,25 +176,23 @@ const LocationBlock = () => (
 );
 
 const EmailListBlock = () => (
-  <Block className="col-span-12 md:col-span-9">
-    <p className="mb-3 text-lg">Join my mailing list</p>
-    <form
-      onSubmit={(e) => e.preventDefault()}
-      className="flex items-center gap-2"
-    >
-      <input
-        type="email"
-        placeholder="Enter your email"
-        className="w-full rounded border border-zinc-700 bg-zinc-800 px-3 py-1.5 transition-colors focus:border-red-300 focus:outline-0"
-      />
-      <button
-        type="submit"
-        className="flex items-center gap-2 whitespace-nowrap rounded bg-zinc-50 px-3 py-2 text-sm font-medium text-zinc-900 transition-colors hover:bg-zinc-300"
-      >
-        <FiMail /> Join the list
-      </button>
-    </form>
-  </Block>
+<Block className="col-span-12 md:col-span-9 text-zinc-200 relative overflow-hidden fadeout flex h-full items-center">
+  <div className="flex items-center gap-12 text-4xl  anim-text ">
+    {repeatedItems.map((item, index) => (
+      <span key={index} className=" flex items-center  gap-4 pl-12 pr-24 py-4 w-full border rounded-full border-blue-50">
+        
+        <img
+          src={item.src}
+          className="h-10 w-10"
+        />
+        <span>{item.name}</span>
+      </span>
+    ))}
+  </div>
+</Block>
+
+
+
 );
 
 

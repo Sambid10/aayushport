@@ -82,7 +82,7 @@ const IconContainer = ({ Icon }: { Icon: IconType }) => {
         <div
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className="relative grid place-content-center pointer-events-none pointer-events-auto border-gray-500"
+            className="relative grid place-content-center  pointer-events-auto border-gray-500"
         >
             <Link href="/">
                 <Icon className="text-[#fff] lg:h-9 lg:w-10 h-5 w-5" />

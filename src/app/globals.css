@@ -93,15 +93,35 @@ body {
   h1{
       font-weight: 400;
       font-size: xx-large;
-      color: white;
+     
       margin: 0px;
       text-align: center;
   }
   p{
-      color: #ededed;
+    
       font-size: larger;
       margin: 0px;
       text-align: center;
       margin-top: 10px;
   }
+}
+
+.anim-text{
+animation: text-move 20s linear infinite;
+width: min-content;
+padding-left: 3rem;
+}
+@keyframes text-move{
+to{
+    transform: translateX(-50%);
+}
+}
+.fadeout{
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 5rem,
+        black calc(100% - 5rem),
+        transparent
+    );
 }

@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Roboto, Ubuntu } from "next/font/google";
 import ReactLenis from "lenis/react";
 import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+
+const roboto=Ubuntu({
+  weight:["400"],
+  variable:"--font-roboto",
+  subsets:["latin"]
+})
 import Navbar from "./_components/Navbar";
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -25,9 +31,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} w-full mx-auto antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} w-full mx-auto antialiased`}
       >
-        <div className="max-w-[100rem] w-full mx-auto">
+        <div className="max-w-[100rem] w-full mx-auto font-roboto">
         <Navbar />
         <ReactLenis
         root

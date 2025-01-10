@@ -11,10 +11,7 @@ export const links = [
         title: "My Work",
         href: "/all"
     },
-    {
-        title: "Contact",
-        href: "/contact"
-    }
+   
 ]
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
