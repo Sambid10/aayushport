@@ -61,8 +61,8 @@ export default function Navbar() {
                             className={twMerge(
                                 `px-6 py-2 font-medium mr-2 text-gray-200 transition-colors duration-300 rounded-full`,
                                 pathname === link.href
-                                    ? "bg-gray-950 text-[#ffff] shadow-lg"
-                                    : "hover:bg-gray-700"
+                                    ? "bg-gray-950 text-[#ffff] shadow-lg py-3"
+                                    : "hover:bg-gray-700 py-3"
                             )}
                         >
                             {link.title}
