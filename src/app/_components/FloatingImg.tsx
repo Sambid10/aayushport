@@ -92,13 +92,13 @@ export default function FloatingImg() {
         <Image 
           alt='img'
           src="/7.webp"
-          width={170}
-          height={180}
+          width={200}
+          height={250}
         />
         <Image 
           alt='img'
           src="/8.webp"
-          width={140}
+          width={190}
           height={190}
         />
      
@@ -107,7 +107,7 @@ export default function FloatingImg() {
         <h1 className='text-gray-200'>Like my work? Feel free to get in touch at</h1>
         <button className="inline-flex text-2xl pointer-events-none h-16 px-12 animate-shimmer items-center justify-center   bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%]  font-medium  border border-gray-950 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
         
-        lol@gmail.com
+        aayushshk32@gmail.com
       </button>
       </div>
 

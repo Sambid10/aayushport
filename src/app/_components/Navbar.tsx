@@ -40,7 +40,7 @@ export default function Navbar() {
                 whileHover="open"
                 variants={{
                     hidden: {
-                        y: "-85%"
+                        y: "-95%"
                     },
                     open: {
                         y: "0%"

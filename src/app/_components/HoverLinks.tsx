@@ -1,6 +1,6 @@
 "use client";
 import { useRef } from "react";
-import { FaGithub, FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { SiFacebook, SiGithub, SiInstagram, SiLinkedin, SiTiktok, SiX, SiYoutube } from "react-icons/si";
 import Link from "next/link";
 import { useAnimate, motion } from "framer-motion";
 import { IconType } from "react-icons";
@@ -19,10 +19,10 @@ export default function FooterLinks() {
     return (
         <div className="divide-y w-[100%] lg:w-[60%] border-px">
             <div className="grid grid-cols-4 lg:h-24 h-12 divide-x border-px border-gray-50">
-                <IconContainer Icon={FaGithub} />
-                <IconContainer Icon={FaInstagram} />
-                <IconContainer Icon={FaFacebook} />
-                <IconContainer Icon={FaLinkedin} />
+                <IconContainer Icon={SiFacebook} />
+                <IconContainer Icon={SiLinkedin} />
+                <IconContainer Icon={SiInstagram} />
+                <IconContainer Icon={SiX} />
             </div>
         </div>
     );

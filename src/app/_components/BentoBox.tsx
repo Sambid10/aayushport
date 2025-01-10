@@ -2,9 +2,9 @@ import React from "react";
 import { MotionProps, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
-import Image from "next/image";
-import { SiGithub, SiTiktok, SiX, SiYoutube } from "react-icons/si";
-import { img } from "framer-motion/client";
+import { SiFacebook, SiGithub, SiInstagram, SiLinkedin, SiX, SiYoutube } from "react-icons/si";
+const reveal=["cool stuff.","stunning visuals.","eye-catching designs.","vibrant designs."]
+import { FlipWords } from "./RevealSentences";
 const items = [
   { name: 'Figma',src:"/fig.png" },
   { name: 'Blender',src:'/blender.svg' },
@@ -85,7 +85,7 @@ const HeaderBlock = () => (
     </h1>
     <a
       href="/all"
-      className="flex items-center gap-1 text-red-300 hover:underline"
+      className="flex items-center gap-1 text-blue-400 hover:underline"
     >
       Check out all my Work here.. <FiArrowRight />
     </a>
@@ -101,13 +101,13 @@ const SocialsBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-red-500 md:col-span-3"
+      className="col-span-6 bg-blue-400 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 md:col-span-3"
     >
       <a
         href="#"
         className="grid h-full place-content-center text-3xl text-white"
       >
-        <SiYoutube />
+        <SiFacebook />
       </a>
     </Block>
     <Block
@@ -115,13 +115,13 @@ const SocialsBlock = () => (
         rotate: "-2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-green-600 md:col-span-3"
+      className="col-span-6 bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600  md:col-span-3"
     >
       <a
         href="#"
         className="grid h-full place-content-center text-3xl text-white"
       >
-        <SiGithub />
+        <SiLinkedin />
       </a>
     </Block>
     <Block
@@ -129,13 +129,13 @@ const SocialsBlock = () => (
         rotate: "-2.5deg",
         scale: 1.1,
       }}
-      className="col-span-6 bg-zinc-50 md:col-span-3"
+      className="col-span-6  bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 md:col-span-3"
     >
       <a
         href="#"
-        className="grid h-full place-content-center text-3xl text-black"
+        className="grid h-full place-content-center text-3xl text-[#ffff]"
       >
-        <SiTiktok />
+        <SiInstagram />
       </a>
     </Block>
     <Block
@@ -157,14 +157,15 @@ const SocialsBlock = () => (
 
 const AboutBlock = () => (
   <Block className="col-span-12 text-3xl leading-snug">
-    <p>
-      My passion is building cool stuff.{" "}
+    <div>
+      My passion is building <FlipWords words={reveal}/><br/>
+      <div className="h-[1vh]"/>
       <span className="text-zinc-400 tracking-wide">
         I build primarily with React, Tailwind CSS, and Framer Motion. I love
         this stack so much that I even built a website about it. I've made over
         a hundred videos on the subject across YouTube and TikTok.
       </span>
-    </p>
+    </div>
   </Block>
 );
 
@@ -179,7 +180,7 @@ const EmailListBlock = () => (
 <Block className="col-span-12 md:col-span-9 text-zinc-200 relative overflow-hidden fadeout flex h-full items-center">
   <div className="flex items-center gap-12 text-4xl  anim-text ">
     {repeatedItems.map((item, index) => (
-      <span key={index} className=" flex items-center  gap-4 pl-12 pr-24 py-4 w-full border rounded-full border-blue-50">
+      <span key={index} className=" flex items-center  gap-4 pl-12 pr-24 py-4 w-full border rounded-full border-green-100">
         
         <img
           src={item.src}
