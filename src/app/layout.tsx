@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import ReactLenis from "lenis/react";
 import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,8 +29,19 @@ export default function RootLayout({
       >
         <div className="max-w-[100rem] w-full mx-auto">
         <Navbar />
-        
-          {children}
+        <ReactLenis
+        root
+        options={{
+          // Learn more -> https://github.com/darkroomengineering/lenis?tab=readme-ov-file#instance-settings
+          lerp: 0.06,
+          syncTouch:true
+            
+        }}
+      >
+       
+       {children}
+      </ReactLenis>
+          
         </div>
       </body>
     </html>

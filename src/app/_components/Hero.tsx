@@ -15,15 +15,7 @@ import Footer from "./Footer";
 export const SmoothScrollHero = () => {
   return (
     <div className="bg-[#000] ">
-      <ReactLenis
-        root
-        options={{
-          // Learn more -> https://github.com/darkroomengineering/lenis?tab=readme-ov-file#instance-settings
-          lerp: 0.06,
-          
-            
-        }}
-      >
+     
        
         <Hero />
         <div className=" w-full  dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.1] relative flex items-center justify-center">
@@ -33,7 +25,7 @@ export const SmoothScrollHero = () => {
         </div>
         <FloatingImg/>
         <Footer/>
-      </ReactLenis>
+      
     </div>
   );
 };

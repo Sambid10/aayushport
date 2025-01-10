@@ -51,23 +51,26 @@ export default function Navbar() {
 
                 }}
                 transition={{ duration: 0.2 }}
-                className='flex justify-between relative items-center rounded-md bg-gray-900 border border-gray-700 pl-8 h-16 py-1'>
+                className='flex justify-between relative items-center rounded-full bg-gray-900 border border-gray-700 pl-8 h-[4.3rem] py-1'>
                 <motion.div 
                   whileHover="open"
                  className='h-[1rem] absolute -top-3 z-[90] w-full bg-transparent'/>
                 <h1 className='text-2xl mr-8'>LOGO</h1>
                 {links.map((link, i) => (
-                    <div key={i} className='h-16  '>
                         <Link
-                        scroll={false}
-                            className={twMerge(`hover:bg-gray-800 hover: border-y border-gray-700 px-8 ${pathname === link.href && "bg-gray-950 border-y border-gray-700 hover:bg-gray-950"} font-medium flex justify-between items-center text-base  transition-colors ease-in duration-200  h-16`)}
+                            key={i}
+                            prefetch={true}
                             href={link.href}
+                            className={twMerge(
+                                `px-6 py-2 font-medium mr-2 text-gray-200 transition-colors duration-300 rounded-full`,
+                                pathname === link.href
+                                    ? "bg-gray-950 text-[#ffff] shadow-lg"
+                                    : "hover:bg-gray-700"
+                            )}
                         >
                             {link.title}
                         </Link>
-                    </div>
-
-                ))}
+                    ))}
             </motion.nav>
         </motion.div>
     )
