@@ -11,13 +11,14 @@ import { useRef } from "react";
 import { RevealBento } from "./BentoBox";
 import FloatingImg from "./FloatingImg";
 import Footer from "./Footer";
+import SubHero from "./SubHero";
 
 export const SmoothScrollHero = () => {
   return (
     <div className="bg-[#000] ">
      
        
-        <Hero />
+        <SubHero/>
         <div className=" w-full  dark:bg-black bg-white  dark:bg-dot-white/[0.25] bg-dot-black/[0.1] relative flex items-center justify-center">
         <div className="absolute z-0 pointer-events-none inset-0 flex items-center justify-center transition-colors ease-in dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_5%,black)]"></div>
   
