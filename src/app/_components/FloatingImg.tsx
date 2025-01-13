@@ -46,7 +46,7 @@ export default function FloatingImg() {
   }
   return (
     <div onMouseMove={(e) => {manageMouseMove(e)}} className='relative min-h-[120dvh] mx-auto max-w-[100vw] overflow-hidden'>
-      <div ref={plane1} className='plane'>
+      <div ref={plane1} className='plane hidden sm:block'>
         <Image 
           alt='img'
           src="/1.webp"
@@ -67,7 +67,7 @@ export default function FloatingImg() {
         />
       </div>
 
-      <div ref={plane2} className='plane'>
+      <div ref={plane2} className='plane hidden md:block'>
         <Image 
           alt='img'
           src="/4.webp"
@@ -88,7 +88,7 @@ export default function FloatingImg() {
         />
       </div>
 
-      <div ref={plane3} className='plane'>
+      <div ref={plane3} className='plane hidden lg:block'>
         <Image 
           alt='img'
           src="/7.webp"

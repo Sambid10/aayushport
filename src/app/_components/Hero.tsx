@@ -15,7 +15,7 @@ import SubHero from "./SubHero";
 
 export const SmoothScrollHero = () => {
   return (
-    <div className="bg-[#000] w-full  ">
+    <div className="bg-[#000] w-full max-w-[100rem]  mx-auto ">
      
        <div className="w-full">
        <SubHero/>
