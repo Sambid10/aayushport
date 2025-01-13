@@ -55,7 +55,7 @@ export default function SubHero() {
     ]
     const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.5, 1])
     return (
-        <div ref={ref} className='container'>
+        <div ref={ref} className='container w-full'>
             <div className='stick'>
                 {
                     pic.map( (pic, index) => {

@@ -31,9 +31,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} w-full mx-auto antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} w-full antialiased`}
       >
-        <div className="max-w-[100rem] w-full mx-auto font-roboto">
+        <div className="max-w-[100rem]  w-full mx-auto font-roboto">
         <Navbar />
         <ReactLenis
         root
