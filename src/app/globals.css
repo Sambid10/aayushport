@@ -195,10 +195,10 @@ to{
             }
             &:nth-of-type(7){
                 .imageContainer{
-                    top: 22.5vh;
-                    left: 25vw;
-                    width: 15vw;
-                    height: 15vh;
+                    top: 25.9vh;
+                    left: 27vw;
+                    width: 21vw;
+                    height: 22vh;
                 }
             }
         }
