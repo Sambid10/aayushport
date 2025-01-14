@@ -21,7 +21,7 @@ export default function Modal({ selected, setSelected, img ,index}: Props) {
   return (
     <div
     onClick={() => setSelected(false)}
-    className="fixed inset-0 bg-black/20 w-full z-[95] cursor-pointer overflow-y-auto"
+    className="fixed inset-0 bg-black/30 w-full z-[95] cursor-pointer overflow-y-auto"
   >
     <motion.div
      className="w-full max-w-[700px] mx-auto flex h-full justify-center items-center px-8 cursor-default"
