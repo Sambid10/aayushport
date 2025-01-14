@@ -50,12 +50,12 @@ export default function Page() {
            
               <button
                   onClick={handleBack} 
-                className='px-2 py-2 ml-2 hover:bg-gray-800 rounded-full  transition-colors ease-in duration-200 flex justify-center items-center'
+                className='px-2 py-2 ml-2 text-[#ffff] hover:bg-gray-800 rounded-full  transition-colors ease-in duration-200 flex justify-center items-center'
               >
                 <BiChevronLeft className='h-7 w-7 '/>
               </button>
               <TabsTrigger
-                className="text-base px-4 text-gray-200 font-medium h-[80%]  rounded-full w-fit hover:bg-gray-700 ease-in duration-200 transition-colors"
+                className="text-base px-4 text-[#ffff] font-medium h-[80%]  rounded-full w-fit hover:bg-gray-700 ease-in duration-200 transition-colors"
                 value="Poster"
               >
                 Poster Designs
