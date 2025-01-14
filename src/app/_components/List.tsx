@@ -4,12 +4,9 @@ import { data } from "../utils/data";
 import { easeIn, motion } from "framer-motion";
 import Image from "next/image";
 import Modal from "./Modal";
-interface Props {
-  selected: boolean;
-  setSelected: (selected: boolean) => void;
-}
 
-export default function List({ selected, setSelected }: Props) {
+export default function List() {
+  const [selected,setSelected]=useState(false)
   const imagesPerLoad = 10; // Number of images to load per click
   const [visibleCount, setVisibleCount] = useState(imagesPerLoad);
   const [index, setIndex] = useState<number>()

@@ -28,7 +28,7 @@ export default function TeeImages() {
     }
     return (
       <div>
-        <div className="columns-2 md:columns-4 space-y-6 gap-6 py-4">
+        <div className="columns-2  lg:columns-4 space-y-6 gap-6 py-4">
           {visibleImages.map((img, i) => (
             <motion.div
   

@@ -34,7 +34,7 @@ export default function Page() {
   })
 
   return (
-    <div className='max-w-7xl mx-auto'>
+    <div className='max-w-7xl mx-auto px-4 xl:px-0'>
       <Tabs defaultValue="Poster" className="w-full relative">
         <motion.div
           whileHover={"open"}
