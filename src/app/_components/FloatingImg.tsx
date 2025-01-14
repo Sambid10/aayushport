@@ -105,7 +105,7 @@ export default function FloatingImg() {
       </div>
       <div className={"title flex flex-col items-center justify-center gap-3"}>
         <h1 className='text-gray-200'>Like my work? Feel free to get in touch at</h1>
-        <button className="inline-flex text-2xl pointer-events-none h-16 px-12 animate-shimmer items-center justify-center   bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%]  font-medium  border border-gray-950 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+        <button className=" text-gray-200 inline-flex text-2xl pointer-events-none h-16 px-12 animate-shimmer items-center justify-center   bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%]  font-medium  border border-gray-950 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
         
         aayushshk32@gmail.com
       </button>

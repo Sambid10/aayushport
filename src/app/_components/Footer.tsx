@@ -36,7 +36,7 @@ export function Content(){
             <FooterLinks/>
             </div>
            
-            <div className="absolute z-0 pointer-events-none inset-0 flex items-center justify-center transition-colors ease-in dark:bg-black/5 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_2%,black)]"></div>
+            
         </div>
     )
 }

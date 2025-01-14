@@ -31,10 +31,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} w-full antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} bg-black w-full antialiased`}
       >
-        <div className=" font-roboto">
-        <Navbar />
+        <div className=" font-roboto ">
+        
         <ReactLenis
         root
         options={{

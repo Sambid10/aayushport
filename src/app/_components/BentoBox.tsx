@@ -11,6 +11,7 @@ const items = [
   { name: 'Blender', src: '/blender.svg' },
   { name: 'Adobe_Photoshop', src: '/ad.png' },
   { name: 'Adobe_Premiere_Pro', src: '/vod.png' },
+  { name: 'Unreal_Engine', src: '/unreal.png' },
 ];
 const repeatedItems = [...items, ...items];
 export const RevealBento = () => {
@@ -79,7 +80,7 @@ const HeaderBlock = () => (
       alt="avatar"
       className="mb-4 size-14 rounded-full"
     />
-    <h1 className="mb-12 text-4xl font-medium leading-tight">
+    <h1 className="mb-8 text-4xl font-medium leading-tight">
       I'm Aayush.<br />
       <span className="text-zinc-400">
         A graphic designer specializing in poster designs, tee designs and immersive visuals. Let's bring your ideas to life.
@@ -159,8 +160,7 @@ const SocialsBlock = () => (
 
 const AboutBlock = () => (
   <Block className="col-span-12 text-3xl leading-snug">
-    
-      <span className="">
+      <span className="mt-2">
         <ul className="list-disc pl-6 text-zinc-400">
           <li>
             <span className="text-blue-400">Poster Designs : </span> <span className="inline">Bold, creative visuals for events, campaigns, or personal projects.</span>

@@ -48,11 +48,11 @@ export default function Navbar() {
 
                 }}
                 transition={{ duration: 0.2 }}
-                className='flex justify-between relative items-center rounded-full bg-gray-900 border border-gray-700 pl-8 h-[4.3rem] py-1'>
+                className='flex justify-between relative items-center rounded-full bg-gray-900 border border-gray-800 pl-8 h-[4.3rem] py-1'>
                 <motion.div 
                   whileHover="open"
                  className='h-[1rem] absolute -top-3 z-[90] w-full bg-transparent'/>
-                <h1 className='text-2xl mr-8'>LOGO</h1>
+                <h1 className='text-2xl mr-8 text-gray-50'>LOGO</h1>
                 {links.map((link, i) => (
                         <Link
                             key={i}

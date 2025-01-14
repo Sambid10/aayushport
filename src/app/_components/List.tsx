@@ -31,7 +31,7 @@ export default function List({ selected, setSelected }: Props) {
   }
   return (
     <div>
-      <div className="columns-2 md:columns-3 space-y-6 gap-6">
+      <div className="columns-2 md:columns-3 space-y-6 gap-6 py-4">
         {visibleImages.map((img, i) => (
           <motion.div
 
@@ -51,10 +51,11 @@ export default function List({ selected, setSelected }: Props) {
               <motion.div
               >
                 <Image
-                  src={img.url}
+                  src={img.src}
                   className="brightness-90 "
-                  onClick={() => handleClick(img.url, img.id)}
+                  onClick={() => handleClick(img.src.src, img.id)}
                   alt="alt"
+                  placeholder="blur"
                   priority={true}
                   onLoad={(event) => {
                     const target = event.currentTarget as HTMLImageElement;
@@ -82,7 +83,7 @@ export default function List({ selected, setSelected }: Props) {
         <div className="flex justify-center mt-6">
           <button
             onClick={handleLoadMore}
-            className="px-6 py-2 border rounded hover:bg-[#121212]"
+            className="px-6 py-2 border rounded bg-gray-50 hover:bg-gray-200"
           >
             Load More
           </button>
