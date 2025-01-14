@@ -1,12 +1,12 @@
 "use client"
 import React, { useRef } from 'react'
-import Pic1 from "../../../public/14.webp"; //center
+import Pic1 from "../../../public/26.webp"; //center
 import Pic2 from "../../../public/17.webp";
-import Pic3 from "../../../public/5.webp";
+import Pic3 from "../../../public/12.webp";
 import Pic4 from "../../../public/16.webp";
 import Pic5 from "../../../public/11.webp";
-import Pic6 from "../../../public/6.webp";
-import Pic7 from "../../../public/15.webp";
+import Pic6 from "../../../public/30.webp";
+import Pic7 from "../../../public/27.webp";
 import Image from 'next/image';
 import { useScroll, useTransform } from 'framer-motion';
 import { motion } from "framer-motion"

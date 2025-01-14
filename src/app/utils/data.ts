@@ -15,5 +15,12 @@ export const data = [
   { id: 14, url: "/14.webp" },
   { id: 15, url: "/15.webp" },
   { id: 16, url: "/16.webp" },
-  { id: 17, url: "/17.webp" }
+  { id: 17, url: "/17.webp" },
+  { id: 18, url: "/25.webp" },
+  { id: 19, url: "/26.webp" },
+  { id: 20, url: "/27.webp" },
+  { id: 21, url: "/28.webp" },
+  { id: 22, url: "/29.webp" },
+  { id: 23, url: "/30.webp" },
 ];
+
