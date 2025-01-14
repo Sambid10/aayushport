@@ -58,7 +58,7 @@ export default function Page() {
                 <BiChevronLeft className='h-7 w-7 '/>
               </button>
               <TabsTrigger
-                className="text-xl font-medium h-[85%]  rounded-full w-full hover:bg-gray-700 ease-in duration-200 transition-colors"
+                className="text-gray-200 font-medium h-[85%]  rounded-full w-full hover:bg-gray-700 ease-in duration-200 transition-colors"
                 value="Poster"
               >
                 Poster Designs
@@ -70,7 +70,7 @@ export default function Page() {
               className="flex justify-center items-center h-full"
             >
               <TabsTrigger
-                className="text-xl font-medium h-[85%]  w-full rounded-full  hover:bg-gray-700 ease-in duration-200 transition-colors"
+                className=" text-gray-200 font-medium h-[85%]  w-full rounded-full  hover:bg-gray-700 ease-in duration-200 transition-colors"
                 value="tee-designs"
               >
                 Tee Designs

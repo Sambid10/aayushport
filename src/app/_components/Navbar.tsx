@@ -56,6 +56,7 @@ export default function Navbar() {
                 {links.map((link, i) => (
                         <Link
                             key={i}
+                            
                             prefetch={true}
                             href={link.href}
                             className={twMerge(
