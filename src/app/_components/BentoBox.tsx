@@ -76,9 +76,9 @@ const HeaderBlock = () => (
   <Block className="col-span-12 row-span-2 md:col-span-6 ">
 
     <img
-      src="https://api.dicebear.com/8.x/lorelei-neutral/svg?seed=John"
+      src="/log.jpg"
       alt="avatar"
-      className="mb-4 size-14 rounded-full"
+      className="mb-4 size-14 rounded-full border border-gray-800"
     />
     <h1 className="mb-8 text-4xl font-medium leading-tight">
       I'm Aayush.<br />
@@ -107,26 +107,15 @@ const SocialsBlock = () => (
       className="col-span-6 bg-blue-400 h-full bg-gradient-to-r from-blue-600 via-blue-500 to-blue-400 md:col-span-3"
     >
       <a
-        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.facebook.com/profile.php?id=61572001973988&mibextid=ZbWKwL"
         className="grid h-full place-content-center text-3xl text-white"
       >
         <SiFacebook />
       </a>
     </Block>
-    <Block
-      whileHover={{
-        rotate: "-2.5deg",
-        scale: 1.1,
-      }}
-      className="col-span-6 h-full   bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600  md:col-span-3"
-    >
-      <a
-        href="#"
-        className="grid h-full place-content-center text-3xl text-white"
-      >
-        <SiLinkedin />
-      </a>
-    </Block>
+
     <Block
       whileHover={{
         rotate: "-2.5deg",
@@ -135,65 +124,55 @@ const SocialsBlock = () => (
       className="col-span-6  full  bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 md:col-span-3"
     >
       <a
-        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.instagram.com/thresh_.vue"
         className="grid h-full place-content-center text-3xl text-[#ffff]"
       >
         <SiInstagram />
       </a>
     </Block>
-    <Block
-      whileHover={{
-        rotate: "2.5deg",
-        scale: 1.1,
-      }}
-      className="col-span-6 h-full  bg-blue-500 md:col-span-3"
-    >
-      <a
-        href="#"
-        className="grid h-full place-content-center text-3xl text-white"
-      >
-        <SiX />
-      </a>
-    </Block>
+
   </>
 );
 
 const AboutBlock = () => (
   <Block className="col-span-12 text-3xl leading-snug">
-      <span className="mt-2">
-        <ul className="list-disc pl-6 text-zinc-400">
-          <li>
-            <span className="text-blue-400">Poster Designs : </span> <span className="inline">Bold, creative visuals for events, campaigns, or personal projects.</span>
-          </li>
-          <li>
-            <span className="text-blue-400 ">Tee Designs : </span> <span className="inline">Custom designs that stand out in fashion and streetwear.</span>
-          </li>
-          <li>
-            <span className="text-blue-400 ">3D & Motion Graphics : </span> <span className="inline">Realistic renders and animations with Blender and Unreal Engine.</span>
-          </li>
-          <li>
-            <span className="text-blue-400 ">Digital Assets : </span> <span className="inline">Logos, branding, and promotional graphics.</span>
-          </li>
-        </ul>
+    <span className="mt-2">
+      <ul className="list-disc pl-6 text-zinc-400">
+        <li>
+          <span className="text-blue-400">Poster Designs : </span> <span className="inline">Bold, creative visuals for events, campaigns, or personal projects.</span>
+        </li>
+        <li>
+          <span className="text-blue-400 ">Tee Designs : </span> <span className="inline">Custom designs that stand out in fashion and streetwear.</span>
+        </li>
+        <li>
+          <span className="text-blue-400 ">3D & Motion Graphics : </span> <span className="inline">Realistic renders and animations with Blender and Unreal Engine.</span>
+        </li>
+        <li>
+          <span className="text-blue-400 ">Digital Assets : </span> <span className="inline">Logos, branding, and promotional graphics.</span>
+        </li>
+      </ul>
 
-      </span>
+    </span>
 
 
   </Block>
 );
 
 const LocationBlock = () => (
-  <Block className="col-span-12 flex flex-col items-center gap-4 md:col-span-3">
+  <Block className="col-span-12 flex flex-col items-center gap-4 md:col-span-6 justify-center">
     <FiMapPin className="text-3xl" />
-    <p className="text-center text-lg text-zinc-400">Kathmandu, Nepal</p>
+    <h1 className="text-zinc-200">Based in :</h1>
+    <p className="text-center text-lg ">Kathmandu, Nepal</p>
   </Block>
 );
 
 const EmailListBlock = () => (
-  <Block className="col-span-12 md:col-span-9 text-zinc-200 relative overflow-hidden fadeout flex h-full items-center">
+  <Block className="col-span-12  text-zinc-200 relative overflow-hidden fadeout flex h-full items-center">
     <div className="flex items-center gap-12 text-4xl  anim-text ">
       {repeatedItems.map((item, index) => (
-        <span key={index} className=" flex items-center  gap-4 pl-12 pr-24 py-4 w-full border rounded-full border-green-100">
+        <span key={index} className=" flex items-center  gap-4 pl-12 pr-24 py-4 w-full border rounded-full border-blue-200">
 
           <img
             src={item.src}

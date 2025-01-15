@@ -7,22 +7,34 @@ import { IconType } from "react-icons";
 
 export default function FooterLinks() {
     return (
-       
-            <div className="flex justify-center items-center h-full">
-                <LinkContainer />
-          
+
+        <div className="flex  justify-center w-full items-center h-full">
+            <LinkContainer />
         </div>
     );
 }
 
- const LinkContainer = () => {
+const LinkContainer = () => {
     return (
-        <div className="divide-y w-[100%] lg:w-[60%] border-px">
-            <div className="grid grid-cols-4 lg:h-24 h-12 divide-x border-px border-gray-50">
-                <IconContainer Icon={SiFacebook} />
-                <IconContainer Icon={SiLinkedin} />
-                <IconContainer Icon={SiInstagram} />
-                <IconContainer Icon={SiX} />
+        <div className="divide-y w-[100%] border-px">
+            <div className="grid grid-cols-2 lg:h-24 h-16 divide-x border-px border-gray-50">
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="h-full"
+                    href={"https://www.facebook.com/profile.php?id=61572001973988&mibextid=ZbWKwL"}
+                >
+                    <IconContainer Icon={SiFacebook} />
+                </a>
+                <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="h-full"
+                    href={"https://www.instagram.com/thresh_.vue"}
+                >
+                    <IconContainer Icon={SiInstagram} />
+                </a>
+
             </div>
         </div>
     );
@@ -49,7 +61,7 @@ const EXIT_KEYFRAMES: Record<string, string[]> = {
 };
 
 const IconContainer = ({ Icon }: { Icon: IconType }) => {
-    const[scope,animate]=useAnimate()
+    const [scope, animate] = useAnimate()
 
     const handleMouseEnter = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const side = getNearestSide(e);
@@ -82,21 +94,21 @@ const IconContainer = ({ Icon }: { Icon: IconType }) => {
         <div
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className="relative grid place-content-center  pointer-events-auto border-gray-500"
+            className="relative grid place-content-center h-full pointer-events-auto border-gray-500"
         >
-            <Link href="/">
+            <div>
                 <Icon className="text-[#fff] lg:h-9 lg:w-10 h-5 w-5" />
-            </Link>
+            </div>
             <motion.div
                 ref={scope}
                 style={{
                     clipPath: "polygon(100% 100%, 100% 0, 100% 100%, 0% 100%)",
                 }}
-                className="grid place-content-center bg-[#ffff] absolute inset-0"
+                className="grid place-content-center bg-gray-100 absolute inset-0"
             >
-                <Link href="/">
+                <div>
                     <Icon className="text-[#000] lg:h-9 lg:w-10 h-5 w-5" />
-                </Link>
+                </div>
             </motion.div>
         </div>
     );
