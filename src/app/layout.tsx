@@ -32,7 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Favicon */}
-        <link rel="icon" href="/log.jpg" type="image/x-icon" />
+        <link rel="icon" href="/log.jpg" type="image/jpg" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} bg-black w-full antialiased`}
